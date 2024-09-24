@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zara Bakes - Cakes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Daisy+Spinward&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Daisy Spinward', cursive;
+            background-color: #f0e5f0; /* Light pastel background */
+            color: #4b2c42;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+            font-weight: bold;
+            color: #7e4a8a;
+        }
+
+        nav {
+            background-color: #f3e8ff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #9b77a6;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f08a99; /* Change color on hover */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        .product-details {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            text-align: center;
+            margin: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.05); /* Animation on hover */
+        }
+
+        .product img {
+            width: 300px;
+            height: 300px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .flavor-name {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #9b77a6;
+        }
+
+        .price {
+            font-size: 1.2em;
+            color: #f08a99; /* Pink color for prices */
+            margin-top: 5px;
+        }
+
+        footer {
+            background-color: #f3e8ff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cakes.html">Cakes</a>
+        <a href="cookies.html">Cookies</a>
+        <a href="milkshakes.html">Milkshakes</a>
+        <a href="waffles.html">Waffles</a>
+        <a href="pancakes.html">Pancakes</a>
+        <a href="checkout.html">Checkout</a>
+    </nav>
+
+    <!-- Cake Product Page -->
+    <section class="container">
+        <h1>Cakes</h1>
+        <div class="product-details">
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/e5/06/69/e506690777da9c904c53b6d9ee4c18d1.jpg" alt="Strawberry Cake">
+                <div class="flavor-name">Strawberry Cake</div>
+                <div class="price">₹500</div>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/7f/c6/64/7fc664ef91558369bf289c402bfe42de.jpg" alt="Vanilla Cake">
+                <div class="flavor-name">Vanilla Cake</div>
+                <div class="price">₹450</div>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/aa/2f/24/aa2f240a348072c24ce83f354bde5f87.jpg" alt="Red Velvet Cake">
+                <div class="flavor-name">Red Velvet Cake</div>
+                <div class="price">₹600</div>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/63/dc/b2/63dcb2aeda165413627206d7c389f345.jpg" alt="Lotus Biscoff Cheesecake">
+                <div class="flavor-name">Lotus Biscoff Cheesecake</div>
+                <div class="price">₹700</div>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/14/07/13/14071359961df24c5f895f9fa32c68db.jpg" alt="Blackforest Cake">
+                <div class="flavor-name">Blackforest Cake</div>
+                <div class="price">₹550</div>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/c3/a7/42/c3a74271e5c034825b34fe86d314e301.jpg" alt="Marble Cake">
+                <div class="flavor-name">Marble Cake</div>
+                <div class="price">₹500</div>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/3e/6f/4e/3e6f4e3ac0a039c7f702df6e5f5178ac.jpg" alt="Fruit Cake">
+                <div class="flavor-name">Fruit Cake</div>
+                <div class="price">₹450</div>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/65/4c/49/654c497afa37f2ab296d5b88c1b2492d.jpg" alt="Pineapple Cake">
+                <div class="flavor-name">Pineapple Cake</div>
+                <div class="price">₹500</div>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/7e/0f/4e/7e0f4e3210946379d9b1860b3d2311ac.jpg" alt="Chocolate Truffle Cake">
+                <div class="flavor-name">Chocolate Truffle Cake</div>
+                <div class="price">₹650</div>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/2d/06/89/2d06897e1a767a19e4df9d2fac652586.jpg" alt="Chocolate Mousse Cake">
+                <div class="flavor-name">Chocolate Mousse Cake</div>
+                <div class="price">₹600</div>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/2d/2a/58/2d2a582cb755bee4de828957d4780da0.jpg" alt="Oreo Chocolate Cake">
+                <div class="flavor-name">Oreo Chocolate Cake</div>
+                <div class="price">₹650</div>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/736x/09/f5/89/09f5893047c3e89d99b0f1f5526c1403.jpg" alt="Birthday Cake">
+                <div class="flavor-name">Birthday Cake</div>
+                <div class="price">₹700</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Zara Bakes. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

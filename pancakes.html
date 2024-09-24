@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zara Bakes - Pancakes</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f1f9; /* Changed to a light purple background */
+            color: #4b2c42;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+            font-weight: bold;
+            color: #7e4a8a;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav {
+            background-color: #fce7f3; /* Changed to a pastel pink */
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #9b77a6;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-color: #fcefe3;
+            padding: 50px 20px;
+            text-align: center;
+            background: linear-gradient(120deg, #f9e5f7, #fff4b7);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px 0;
+        }
+
+        .product {
+            background-color: #fffafc;
+            padding: 20px;
+            border: 1px solid #e0c7ff;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.2s; /* Added hover effect */
+        }
+
+        .product:hover {
+            transform: scale(1.05); /* Scale up on hover */
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .price {
+            font-size: 20px;
+            color: #9b77a6;
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #f3e8ff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cakes.html">Cakes</a>
+        <a href="cookies.html">Cookies</a>
+        <a href="milkshakes.html">Milkshakes</a>
+        <a href="waffles.html">Waffles</a>
+        <a href="pancakes.html">Pancakes</a>
+        <a href="checkout.html">Checkout</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Pancakes</h1>
+        <p>Fluffy, delicious pancakes in various flavors!</p>
+    </section>
+
+    <!-- Product Section -->
+    <section class="container">
+        <h2>Our Pancake Flavors</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://i2.wp.com/livingfreelyglutenfree.com/wp-content/uploads/2022/08/Strawberry-Waffles-TN.png" alt="Strawberry Pancakes">
+                <h3>Strawberry Pancakes</h3>
+                <p>Fresh and fluffy pancakes with a hint of strawberry.</p>
+                <div class="price">Price: ₹200</div>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/36/4f/61/364f611f67c339daf10fc2eebd37dee4.jpg" alt="Chocolate Pancakes">
+                <h3>Chocolate Pancakes</h3>
+                <p>Rich and moist pancakes with decadent chocolate flavor.</p>
+                <div class="price">Price: ₹250</div>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/75/8c/11/758c11f0d098abfe44a8bd0abe99f374.jpg" alt="Vanilla Pancakes">
+                <h3>Vanilla Pancakes</h3>
+                <p>Classic, fluffy pancakes infused with sweet vanilla.</p>
+                <div class="price">Price: ₹220</div>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/24/f7/1e/24f71ea769cb84e2998150c4b9ac62cc.jpg" alt="Blueberry Pancakes">
+                <h3>Blueberry Pancakes</h3>
+                <p>Delicious pancakes loaded with fresh blueberries.</p>
+                <div class="price">Price: ₹240</div>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/4f/88/2a/4f882a86fdd2d844fdf7a5a1f04b1600.jpg" alt="Banana Pancakes">
+                <h3>Banana Pancakes</h3>
+                <p>Soft and fluffy pancakes with ripe bananas.</p>
+                <div class="price">Price: ₹230</div>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/aa/5d/cc/aa5dcc09f660bdd9a9a26d6162f230e8.jpg" alt="Raspberry Pancakes">
+                <h3>Raspberry Pancakes</h3>
+                <p>Sweet and tangy pancakes with fresh raspberries.</p>
+                <div class="price">Price: ₹250</div>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/09/dd/a9/09dda9eb96bf26324e860d939d5035a5.jpg" alt="Dark Chocolate Pancakes">
+                <h3>Dark Chocolate Pancakes</h3>
+                <p>Rich and decadent pancakes with dark chocolate flavor.</p>
+                <div class="price">Price: ₹260</div>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/a2/2b/68/a22b68ca44448fb6c517ed3bbe7303da.jpg" alt="Chocolate Chip Pancakes">
+                <h3>Chocolate Chip Pancakes</h3>
+                <p>Fluffy pancakes loaded with chocolate chips.</p>
+                <div class="price">Price: ₹240</div>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/b1/1b/4b/b11b4b25f4c79782bb6b4cfa34810872.jpg" alt="Double Chocolate Pancakes">
+                <h3>Double Chocolate Pancakes</h3>
+                <p>Indulgent pancakes with double the chocolate.</p>
+                <div class="price">Price: ₹270</div>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/af/7b/53/af7b53389b5140af0d49890746a8210c.jpg" alt="Nutella Pancakes">
+                <h3>Nutella Pancakes</h3>
+                <p>Rich pancakes topped with creamy Nutella.</p>
+                <div class="price">Price: ₹280</div>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/7a/0b/09/7a0b09a6371c860647343d33e56a4d28.jpg" alt="Raspberry Blueberry Pancakes">
+                <h3>Raspberry Blueberry Pancakes</h3>
+                <p>A delightful mix of raspberries and blueberries in every bite.</p>
+                <div class="price">Price: ₹300</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Zara Bakes. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

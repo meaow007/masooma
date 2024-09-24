@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zara Bakes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8d1f1; /* Light pastel pink background */
+            margin: 0;
+            padding: 0;
+            color: #4a2c2c; /* Darker text color */
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #f8d1f1, #ffebc2);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #f5c9d6;
+            position: relative;
+        }
+
+        /* Bows and Flowers */
+        .header-decoration {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: 50px;
+            background-image: url('https://example.com/bow.png'); /* Replace with your bow image URL */
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .header-decoration-flower {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 50px;
+            height: 50px;
+            background-image: url('https://example.com/flower.png'); /* Replace with your flower image URL */
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive; /* Cursive font for the heading */
+            font-size: 70px; /* Increased size for visibility */
+            color: #7d5b9d; /* Darker shade for visibility */
+            margin: 0;
+            text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5); /* Shadow for depth */
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            margin: 0 20px;
+            font-weight: 600;
+            color: #7d5b9d;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #d9b3d8;
+            color: white;
+        }
+
+        /* Hero Section Styles */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1602871520428-bb7b1e8f9b49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg2MzB8MHwxfGFsbHwxfHx8fHx8fHwxNjA3NjY4MDY1&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center;
+            background-size: cover;
+            padding: 100px 20px;
+            text-align: center;
+            color: #4a2c2c; /* Darker text color */
+            position: relative;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin: 20px 0;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        /* Product Section Styles */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .product {
+            background-color: #ffebc2; /* Light pastel color */
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product h3 {
+            color: #4a2c2c;
+            margin: 15px 0 5px;
+            font-weight: 600;
+        }
+
+        .product p {
+            padding: 0 15px;
+            color: #777;
+            margin: 0;
+        }
+
+        /* Checkout Section Styles */
+        .checkout {
+            background-color: #ffebc2; /* Light pastel color */
+            padding: 30px;
+            text-align: center;
+            margin: 40px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .checkout h2 {
+            margin-bottom: 20px;
+            color: #4a2c2c;
+        }
+
+        .checkout input[type="text"], 
+        .checkout input[type="number"] {
+            padding: 10px;
+            margin: 10px 0;
+            width: 250px;
+            border: 1px solid #d5a6e5;
+            border-radius: 5px;
+        }
+
+        .checkout button {
+            padding: 10px 20px;
+            background-color: #7d5b9d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .checkout button:hover {
+            background-color: #5a3f6d;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #ffebc2; /* Light pastel color */
+            padding: 15px;
+            text-align: center;
+            margin-top: 20px;
+            border-top: 5px solid #f5c9d6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-decoration"></div>
+        <div class="header-decoration-flower"></div>
+        <h1>Zara Bakes</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cakes.html">Cakes</a>
+            <a href="cookies.html">Cookies</a>
+            <a href="milkshakes.html">Milkshakes</a>
+            <a href="waffles.html">Waffles</a>
+            <a href="pancakes.html">Pancakes</a>
+            <a href="checkout.html">Checkout</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Delicious Treats Await!</h2>
+        <p>Indulge in our exquisite range of cakes, cookies, and more!</p>
+    </section>
+
+    <!-- Product Section -->
+    <section class="products">
+        <div class="product">
+            <img src="https://makeitdough.com/wp-content/uploads/2019/09/Brownies-12-scaled.jpg" alt="Brownies">
+            <h3>Brownies</h3>
+            <p>Rich, gooey brownies made from the finest ingredients.</p>
+        </div>
+        <div class="product">
+            <img src="https://mrbrownbakery.com/image/images/GJ7uCwGiteTF24HTWBclkziVTdhpQeZWH23MvQfq.jpeg?p=" alt="Cakes">
+            <h3>Cakes</h3>
+            <p>Delightful cakes in various flavors, perfect for any occasion.</p>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrrUu75vr3kfPDXzrPdq6CeT1PwjjJwRQoWA&s" alt="Cookies">
+            <h3>Cookies</h3>
+            <p>Crispy and chewy cookies that melt in your mouth.</p>
+        </div>
+        <div class="product">
+            <img src="https://www.tastesoflizzyt.com/wp-content/uploads/2023/04/how-to-make-a-milkshake-with-ice-cream-15.jpg" alt="Milkshakes">
+            <h3>Milkshakes</h3>
+            <p>Refreshing milkshakes in a variety of flavors.</p>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4FUOY5zC1bolvxvKdVAOjuhoR0pFkkPYbwQ&s" alt="Waffles">
+            <h3>Waffles</h3

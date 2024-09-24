@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zara Bakes - Milkshakes</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Daisy Spinwiard', cursive; /* Updated font */
+            background-color: #f7e8f4; /* Light pastel background */
+            color: #4b2c42;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+            font-weight: bold;
+            color: #9b77a6; /* Soft purple color */
+        }
+
+        nav {
+            background-color: #f3e8ff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #7e4a8a; /* Pastel purple */
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s; /* Smooth transition */
+        }
+
+        nav a:hover {
+            color: #eab8e3; /* Light pink on hover */
+        }
+
+        .hero {
+            background-color: #fcefe3; /* Light background */
+            padding: 50px 20px;
+            text-align: center;
+            background: linear-gradient(120deg, #f9e5f7, #fff4b7);
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Set to 4 columns */
+            gap: 15px; /* Adjusted gap for better alignment */
+            padding: 40px 0;
+        }
+
+        .product {
+            background-color: #ffe6f2; /* Soft pink background */
+            padding: 10px; /* Reduced padding for smaller gaps */
+            border: 1px solid #e0c7ff;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s; /* Animation for scaling */
+        }
+
+        .product:hover {
+            transform: scale(1.05); /* Scale effect on hover */
+        }
+
+        .product img {
+            width: 150px; /* Adjusted width */
+            height: 300px; /* Adjusted height for milkshake glasses */
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #f3e8ff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .flower-icon {
+            width: 30px;
+            height: auto;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .bow-icon {
+            width: 30px;
+            height: auto;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #7e4a8a; /* Soft purple for prices */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cakes.html">Cakes</a>
+        <a href="cookies.html">Cookies</a>
+        <a href="milkshakes.html">Milkshakes</a>
+        <a href="waffles.html">Waffles</a>
+        <a href="pancakes.html">Pancakes</a>
+        <a href="checkout.html">Checkout</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Milkshakes</h1>
+        <p>Delicious and creamy milkshakes in various flavors!</p>
+        <img src="flower-icon.png" alt="Flower" class="flower-icon"> <!-- Add your flower image here -->
+        <img src="bow-icon.png" alt="Bow" class="bow-icon"> <!-- Add your bow image here -->
+    </section>
+
+    <!-- Product Section -->
+    <section class="container">
+        <h2>Our Milkshake Flavors</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://www.tastesoflizzyt.com/wp-content/uploads/2023/04/how-to-make-a-milkshake-with-ice-cream-15.jpg" alt="Classic Milkshake">
+                <h3>Classic Milkshake</h3>
+                <p>A delightful blend of milk and ice cream.</p>
+                <p class="price">Price: ₹150</p>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/3d/3f/89/3d3f89ba9b5ea7d9e5802458fb9ba69b.jpg" alt="Vanilla Milkshake">
+                <h3>Vanilla Milkshake</h3>
+                <p>Classic and smooth vanilla milkshake.</p>
+                <p class="price">Price: ₹160</p>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/3d/ed/b3/3dedb3e1ce9509de43d79e7f7e202a61.jpg" alt="Strawberry Milkshake">
+                <h3>Strawberry Milkshake</h3>
+                <p>Sweet and refreshing with real strawberries.</p>
+                <p class="price">Price: ₹170</p>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/aa/c8/e7/aac8e7495442ea137e4b6d81354d4876.jpg" alt="Mango Milkshake">
+                <h3>Mango Milkshake</h3>
+                <p>Fresh mango blended with creamy milk.</p>
+                <p class="price">Price: ₹180</p>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/6c/c6/8a/6cc68a71867c27d00b653fa9701e6184.jpg" alt="Oreo Milkshake">
+                <h3>Oreo Milkshake</h3>
+                <p>Rich and creamy with chunks of Oreo cookies.</p>
+                <p class="price">Price: ₹190</p>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/b0/81/69/b08169f966cbd1cc10f603bf340c44bb.jpg" alt="Nutella Milkshake">
+                <h3>Nutella Milkshake</h3>
+                <p>Indulgent Nutella blended into a creamy shake.</p>
+                <p class="price">Price: ₹200</p>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/98/36/09/9836094e818816bfd87e35f5dbc5a412.jpg" alt="Blueberry Milkshake">
+                <h3>Blueberry Milkshake</h3>
+                <p>Refreshing milkshake made with real blueberries.</p>
+                <p class="price">Price: ₹180</p>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/28/33/80/283380ac0cd579dce4572f5d6dab2cd5.jpg" alt="Oreo Chocolate Mint Milkshake">
+                <h3>Oreo Chocolate Mint Milkshake</h3>
+                <p>Minty and chocolatey with Oreo pieces.</p>
+                <p class="price">Price: ₹210</p>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/8a/f5/85/8af5854190f14161dd150974736e4104.jpg" alt="Biscoff Milkshake">
+                <h3>Biscoff Milkshake</h3>
+                <p>Caramelized biscuit flavor in a creamy shake.</p>
+                <p class="price">Price: ₹220</p>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/e7/0c/32/e70c32e8452394f55d028d6dc73b2122.jpg" alt="Chocolate Cookies and Cream">
+                <h3>Chocolate Cookies and Cream</h3>
+                <p>Chocolatey delight with cookies and cream flavor.</p>
+                <p class="price">Price: ₹230</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Zara Bakes. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

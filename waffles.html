@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zara Bakes - Waffles</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff4f9; /* Light pastel background */
+            color: #4b2c42; /* Text color */
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+            font-weight: bold;
+            color: #7e4a8a; /* Heading color */
+            font-family: 'Daisy Spinwiard', cursive; /* Cursive font for headings */
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit; /* Inherit color from parent */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav {
+            background-color: #f3e8ff; /* Light purple background */
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #9b77a6; /* Navigation link color */
+            font-weight: bold;
+            transition: color 0.3s; /* Smooth transition for hover effect */
+        }
+
+        nav a:hover {
+            color: #7e4a8a; /* Change color on hover */
+        }
+
+        .hero {
+            background-color: #fcefe3; /* Light pastel background */
+            padding: 50px 20px;
+            text-align: center;
+            background: linear-gradient(120deg, #f9e5f7, #fff4b7); /* Gradient background */
+        }
+
+        .hero h1 {
+            font-size: 48px; /* Large font size for hero heading */
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            gap: 20px; /* Gap between products */
+            padding: 40px 0;
+        }
+
+        .product {
+            background-color: #fffafc; /* White background for product cards */
+            padding: 20px; /* Padding around product content */
+            border: 1px solid #e0c7ff; /* Light border for product card */
+            border-radius: 8px; /* Rounded corners */
+            text-align: center;
+            transition: transform 0.3s; /* Smooth transition for hover effect */
+        }
+
+        .product:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover; /* Maintain aspect ratio */
+            border-radius: 8px; /* Rounded corners for images */
+        }
+
+        .price {
+            font-size: 18px; /* Price font size */
+            color: #9b77a6; /* Price color */
+            margin: 10px 0; /* Margin around price */
+        }
+
+        footer {
+            background-color: #f3e8ff; /* Light purple background */
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cakes.html">Cakes</a>
+        <a href="cookies.html">Cookies</a>
+        <a href="milkshakes.html">Milkshakes</a>
+        <a href="waffles.html">Waffles</a>
+        <a href="pancakes.html">Pancakes</a>
+        <a href="checkout.html">Checkout</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Waffles</h1>
+        <p>Golden and crispy waffles with irresistible flavors!</p>
+    </section>
+
+    <!-- Product Section -->
+    <section class="container">
+        <h2>Our Waffle Flavors</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://mymorningmocha.com/wp-content/uploads/2021/11/Oreo-waffles-with-ice-cream-topping.jpg" alt="Oreo Waffles">
+                <h3>Oreo Waffles</h3>
+                <p>Crispy waffles with crushed Oreos and topped with ice cream for a delicious twist.</p>
+                <p class="price">Price: ₹250</p>
+            </div>
+            <div class="product">
+                <img src="https://cdn.shopify.com/s/files/1/0923/2946/files/29595336784_Yeasted-PB-waffles-1.jpg" alt="Peanut Butter Waffles">
+                <h3>Peanut Butter Waffles</h3>
+                <p>Rich peanut butter flavor blended into golden waffles.</p>
+                <p class="price">Price: ₹230</p>
+            </div>
+            <div class="product">
+                <img src="https://fruitandfoodguru.com/wp-content/uploads/2023/12/kitkat-waffle.jpg" alt="KitKat Waffles">
+                <h3>KitKat Waffles</h3>
+                <p>Crispy waffles with a crunchy KitKat topping.</p>
+                <p class="price">Price: ₹270</p>
+            </div>
+            <div class="product">
+                <img src="https://i2.wp.com/livingfreelyglutenfree.com/wp-content/uploads/2022/08/Strawberry-Waffles-TN.png" alt="Strawberry Waffles">
+                <h3>Strawberry Waffles</h3>
+                <p>Light and fluffy waffles topped with fresh strawberries and whipped cream.</p>
+                <p class="price">Price: ₹240</p>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/4f/76/df/4f76df82879551524cbbacef8700c832.jpg" alt="Dark Chocolate Waffles">
+                <h3>Dark Chocolate Waffles</h3>
+                <p>Decadent waffles infused with rich dark chocolate.</p>
+                <p class="price">Price: ₹260</p>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/86/d6/3c/86d63cd3bf0f44df95a5d84f751b9d6d.jpg" alt="Belgian Waffles">
+                <h3>Belgian Waffles</h3>
+                <p>Classic Belgian waffles served warm with syrup and toppings.</p>
+                <p class="price">Price: ₹220</p>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/fc/a2/3c/fca23c5c83e8824abdb9064e6d3c0017.jpg" alt="Nutella Waffles">
+                <h3>Nutella Waffles</h3>
+                <p>Delicious waffles drizzled with Nutella and topped with hazelnuts.</p>
+                <p class="price">Price: ₹250</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Zara Bakes. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
